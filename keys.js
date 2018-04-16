@@ -1,15 +1,16 @@
 console.log('this is loaded');
 
 exports.twitter = {
-  consumer_key: process.env.TWITTER_CONSUMER_KEY,
-  consumer_secret: process.env.TWITTER_CONSUMER_SECRET,
-  access_token_key: process.env.TWITTER_ACCESS_TOKEN_KEY,
-  access_token_secret: process.env.TWITTER_ACCESS_TOKEN_SECRET
+  consumer_key: 'KwHRJL5obnWqFQSKoRdYgMLhI',
+  consumer_secret: 'LofNjTBVqGVyidacNB3W50wjLl3QnUuM1AJA8whO4dGP7Ch5aX',
+  access_token_key: '981630859693273088-tshv2skyKXPCJwAdKKrSSJ3IzzECnWH',
+  access_token_secret: '3wqwYIh68R1FtOebUEjr7RcoKQNnmY4L2FYDiXGLqYG1E'
 };
 
+
 exports.spotify = {
-  id: process.env.SPOTIFY_ID,
-  secret: process.env.SPOTIFY_SECRET
+  id: 'b47ee6d16fcc4228949bda6f65921b6b',
+  secret: 'd2c62c5eb9d047748c3785f954feed05'
 };
 
 spotify.search({ type: 'track', query: 'The Sign' }, function(err, data) {
